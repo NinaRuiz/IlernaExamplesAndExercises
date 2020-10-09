@@ -47,6 +47,10 @@ namespace ConsoleApp3
                     Console.Clear();
                     Example2.Run();
                     break;
+                case 3:
+                    Console.Clear();
+                    Example3.Run();
+                    break;
                 default:
                     Console.Clear();
                     Console.WriteLine("That example doesn't exist.");
@@ -59,6 +63,7 @@ namespace ConsoleApp3
         {
             AddExample(Example1.ExamplePage);
             AddExample(Example2.ExamplePage);
+            AddExample(Example3.ExamplePage);
             Examples.Add("0 Exit");
         }
 
