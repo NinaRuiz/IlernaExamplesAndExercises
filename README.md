@@ -1,4 +1,7 @@
 # C# Code Examples And Exercises
+I will try to upload new exercises and examples everyweek.
+If the teacher add some exercises to the campus i will add those too.
+
 ## How to download the code
 ### Visual Studio
 1. Open Visual Studio
