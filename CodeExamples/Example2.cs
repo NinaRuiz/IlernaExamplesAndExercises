@@ -53,13 +53,13 @@ namespace ConsoleApp3.CodeExamples
             if (key == null)
             {
                 Console.Clear();
-                Program.Menu();
+                Program.MenuExamples();
                 return;
             }
             // It returns to the menu method i made on Program.cs file
             // Callback to the menu method on Program.cs
             Console.Clear();
-            Program.Menu();
+            Program.MenuExamples();
         }
     }
 }

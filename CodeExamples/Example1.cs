@@ -63,7 +63,7 @@ namespace ConsoleApp3.CodeExamples
                 
                 // It returns to the menu method i made on Program.cs file
                 // Callback to the menu method on Program.cs
-                Program.Menu();
+                Program.MenuExamples();
                 return;
             }
             
@@ -72,7 +72,7 @@ namespace ConsoleApp3.CodeExamples
             
             // It returns to the menu method i made on Program.cs file
             // Callback to the menu method on Program.cs
-            Program.Menu();
+            Program.MenuExamples();
         }
     }
 }
