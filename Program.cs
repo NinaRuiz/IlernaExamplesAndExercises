@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ConsoleApp3.CodeExamples;
+using ConsoleApp3.CodeExercises;
 
 namespace ConsoleApp3
 {
@@ -13,8 +14,9 @@ namespace ConsoleApp3
 
         static void Main(string[] args)
         {    
-            CreateExamplesList();
             
+            
+            Menu();
         }
 
         static void Menu()
@@ -35,9 +37,11 @@ namespace ConsoleApp3
             switch (select)
             {
                 case 1:
+                    Console.Clear();
                     MenuExamples();
                     break;
                 case 2:
+                    Console.Clear();
                     MenuExercises();
                     break;
                 case 0:
@@ -52,7 +56,8 @@ namespace ConsoleApp3
 
         public static void MenuExamples()
         {
-            Console.WriteLine("> Menu: ");
+            CreateExamplesList();
+            Console.WriteLine("> Menu Examples: ");
             foreach (var example in Examples)
             {
                 Console.WriteLine(example);
@@ -64,7 +69,7 @@ namespace ConsoleApp3
             if (input == null)
             {
                 Console.WriteLine("You must choose.");
-                Menu();
+                MenuExamples();
                 return;
             }
             
@@ -73,6 +78,7 @@ namespace ConsoleApp3
             switch (select)
             {
                 case 0:
+                    Menu();
                     break;
                 case 1:
                     Console.Clear();
@@ -89,14 +95,15 @@ namespace ConsoleApp3
                 default:
                     Console.Clear();
                     Console.WriteLine("That example doesn't exist.");
-                    Menu();
+                    MenuExamples();
                     break;
             }
         }
         
         public static void MenuExercises()
         {
-            Console.WriteLine("> Menu: ");
+            CreateExercisesList();
+            Console.WriteLine("> Menu Exercises: ");
             foreach (var exercise in Exercises)
             {
                 Console.WriteLine(exercise);
@@ -108,7 +115,7 @@ namespace ConsoleApp3
             if (input == null)
             {
                 Console.WriteLine("You must choose.");
-                Menu();
+                MenuExercises();
                 return;
             }
             
@@ -117,15 +124,16 @@ namespace ConsoleApp3
             switch (select)
             {
                 case 0:
+                    Menu();
                     break;
                 case 1:
                     Console.Clear();
-                    Example1.Run();
+                    Exercise1.Run();
                     break;
                 default:
                     Console.Clear();
                     Console.WriteLine("That exercise doesn't exist.");
-                    Menu();
+                    MenuExercises();
                     break;
             }
         }
@@ -140,14 +148,14 @@ namespace ConsoleApp3
         
         static void CreateExercisesList()
         {
-            
-            Examples.Add("0 Menu");
+            AddExercise(Exercise1.ExerciseName);
+            Exercises.Add("0 Menu");
         }
         
         private static void AddExercise(string name)
         {
             _exercisesNum++;
-            Examples.Add(_exercisesNum + " Exercise " + name);
+            Exercises.Add(_exercisesNum + " Exercise " + name);
         }
         
         private static void AddExample(string page)

@@ -6,6 +6,16 @@ namespace ConsoleApp3.CodeExercises
     {
         // Exercise name.
         public static string ExerciseName = "Addition";
+        
+        /*
+            EXERCISE:
+             EASY: Write a program that asks the user to say two numbers and add one number to the other.
+             
+             HARD: What will happen if i write a letter? What will happen if i don't write anything? And if i want to 
+                   also see the subtraction, the multiplication and the division?
+                   Make something that tells the user to write a number instead of a letter or anything.
+                   You can also make the program to made every operation.
+         */
 
         /**
          * Solution method
