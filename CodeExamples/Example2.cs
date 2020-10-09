@@ -1,19 +1,12 @@
 using System;
-using ConsoleApp3;
 
 namespace ConsoleApp3.CodeExamples
 {
-    public class Example1
+    public class Example2
     {
         // Example page to show it on console.
         public static string ExamplePage = "p. 16";
-        
-        /**
-        /**
-         * Run method
-         * Write the header on the console.
-         * It makes all the needed callbacks
-         */
+
         public static void Run ()
         {
             // Shows example page on console
@@ -44,29 +37,17 @@ namespace ConsoleApp3.CodeExamples
          */
         public static void End()
         {
-            // Jump to the next line and writ "Press enter to continue..." on the console.
-            Console.WriteLine("\nPress enter to continue...");
-            
-            // Save the key value on to a variable named "key"
+            Console.WriteLine("\nPress a enter to continue...");
             var key = Console.ReadLine();
-            
-            // If key doesn't have any key inside...
             if (key == null)
             {
-                // Clear all lines of the console.
                 Console.Clear();
-                
-                // It returns to the menu method i made on Program.cs file
-                // Callback to the menu method on Program.cs
                 Program.Menu();
                 return;
             }
-            
-            // Clear all lines of the console.
-            Console.Clear();
-            
             // It returns to the menu method i made on Program.cs file
             // Callback to the menu method on Program.cs
+            Console.Clear();
             Program.Menu();
         }
     }
