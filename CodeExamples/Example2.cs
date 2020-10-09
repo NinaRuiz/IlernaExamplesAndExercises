@@ -2,11 +2,22 @@ using System;
 
 namespace ConsoleApp3.CodeExamples
 {
+    /**
+     * Example page 16.2
+     * Shows on console:
+     *     Introduce un dato.
+     * And safe the data on a variable named "dato".
+     */
     public class Example2
     {
         // Example page to show it on console.
-        public static string ExamplePage = "p. 16";
-
+        public static string ExamplePage = "p. 16.2";
+        
+        /**
+         * Run method
+         * Write the header on the console.
+         * It makes all the needed callbacks
+         */
         public static void Run ()
         {
             // Shows example page on console
@@ -23,12 +34,12 @@ namespace ConsoleApp3.CodeExamples
          */
         public static void Example()
         {
-            // Shows on console "Hello World!" and then jump to the next line.
-            Console.WriteLine("Hello World!");
-            // Shows on console "Programing...", it doesn't jump to next line, if we write another 
-            // thing on console, it will continue the text on the same line.
-            Console.Write("Programming...");
+            // Shows on console "Introduce un dato" and then jump to the next line.
+            Console.WriteLine("Introduce un dato");
             
+            // Save the data on a string variable named "dato"
+            string dato = Console.ReadLine();
+
         }
         
         /**

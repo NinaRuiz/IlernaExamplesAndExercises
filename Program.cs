@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConsoleApp3;
 using ConsoleApp3.CodeExamples;
 
 namespace ConsoleApp3
@@ -44,6 +43,10 @@ namespace ConsoleApp3
                     Console.Clear();
                     Example1.Run();
                     break;
+                case 2:
+                    Console.Clear();
+                    Example2.Run();
+                    break;
                 default:
                     Console.Clear();
                     Console.WriteLine("That example doesn't exist.");
@@ -55,6 +58,7 @@ namespace ConsoleApp3
         static void CreateExamplesList()
         {
             AddExample(Example1.ExamplePage);
+            AddExample(Example2.ExamplePage);
             Examples.Add("0 Exit");
         }
 

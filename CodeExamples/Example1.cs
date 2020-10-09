@@ -3,12 +3,17 @@ using ConsoleApp3;
 
 namespace ConsoleApp3.CodeExamples
 {
+    /**
+     * Example of page 16.1
+     * Shows on console:
+     *     Hello World!
+     *     Programming...
+     */
     public class Example1
     {
         // Example page to show it on console.
-        public static string ExamplePage = "p. 16";
+        public static string ExamplePage = "p. 16.1";
         
-        /**
         /**
          * Run method
          * Write the header on the console.
