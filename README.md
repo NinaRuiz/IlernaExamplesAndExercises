@@ -20,6 +20,6 @@ Try to solve every problem by yourself.
 Make a git pull every week, this repository it might change.
 If you find any bug please said it on the whatsapp group.
 
-# Actualizations
+# Updates
 * Add Examples from page 16 and 17
 * Add First Exercise (it can be made with unit 1 and 2)
